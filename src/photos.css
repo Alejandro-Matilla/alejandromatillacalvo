@@ -1,8 +1,8 @@
 /* Keep project documentation visible in full, including portrait photos and CAD. */
 .project-image.project-photo,
 .detail-visual.project-photo {
-  background: #eeeee8;
-  border-color: #d5d8cf;
+  background: transparent;
+  border-color: transparent;
 }
 
 .project-image.project-photo > img,
@@ -59,8 +59,7 @@
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border: 1px solid #d5d8cf;
-  background: #eeeee8;
+  border: 1px solid transparent;
   transition: border-color 0.2s;
 }
 
