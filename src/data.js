@@ -202,11 +202,20 @@ export const projects = [
     period: "June 2026 — Present",
     status: "In progress",
     description:
-      "Designing a quadruped robot, from its physical form and compact electronics to future autonomous behavior.",
+      "An in-progress quadruped robot project combining mechanical design, electronics packaging, and simulation for future autonomous navigation.",
     details: [
-      "Designed the main shape of the quadruped robot.",
-      "Work toward reinforcement learning for autonomous navigation and decision-making.",
-      "Design an electronic architecture compact enough to integrate the robot’s required capabilities.",
+      "Designed the quadruped’s body and four-leg layout in CAD.",
+      "Set up a scene with multiple instances of Nan-011 in Isaac Sim.",
+    ],
+    sections: [
+      {
+        heading: "Mechanical design and electronics",
+        body: "The CAD model places four legs around a rounded central body. The electronics architecture is still in development. The goal is to fit the electronics needed for the robot’s capabilities within the compact body.",
+      },
+      {
+        heading: "Simulation and autonomy",
+        body: "The Isaac Sim scene shows multiple copies of the quadruped arranged in a grid. The next goal is to use reinforcement learning to develop autonomous navigation and decision-making in simulation.",
+      },
     ],
     tags: ["CAD", "Python", "Isaac Sim", "Reinforcement Learning"],
     featured: false,
@@ -305,18 +314,22 @@ export const projects = [
     period: null,
     status: "Coursework project",
     description:
-      "A robotic arm that uses camera-based detection and kinematics to sort colored balls.",
+      "A team-built robotic arm that detects colored balls with a camera and sorts them into labeled collection cups.",
     details: [
       "Worked with a small team to integrate computer vision, robot kinematics, and trajectory planning, sharing progress updates each week.",
     ],
     sections: [
       {
-        heading: "Overview",
-        body: "Used a camera to detect colored balls arranged on a checkered surface. Combined computer vision, forward and inverse kinematics, and trajectory planning to guide a robotic arm through the sorting task.",
+        heading: "Camera and workcell",
+        body: "A camera detected colored balls on a checkered work surface. The arm used a gripper to pick them up and place them in collection cups. The gallery shows the workbench setup and the red, orange, yellow, and green balls grouped in their labeled cups.",
       },
       {
-        heading: "Outcome",
-        body: "Compiled the final results into a detailed demo video showing the integrated system.",
+        heading: "Kinematics and trajectory planning",
+        body: "Forward kinematics describes where the gripper is for a given set of joint angles. Inverse kinematics works in the other direction, finding joint angles that put the gripper at a target. The team combined these models with trajectory planning to guide the arm between pickup and drop-off positions.",
+      },
+      {
+        heading: "Team demonstration",
+        body: "The team documented the integrated vision and arm-control system in a final demo video showing the sorting task.",
       },
     ],
     tags: [
