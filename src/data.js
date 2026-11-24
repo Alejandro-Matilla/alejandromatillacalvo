@@ -1,7 +1,7 @@
 export const profile = {
   name: "Alejandro Matilla Calvo",
   fullName: "Alejandro Matilla Calvo",
-  portrait: null,
+  portrait: "/images/portrait.webp",
   role: "Robotics & Mechanical Engineering Student",
   tagline: "Exploring how robots move, adapt, and interact with the world.",
   description:
@@ -65,11 +65,16 @@ export const projects = [
     tags: ["Mechanical Design", "SolidWorks", "FEA", "Additive Manufacturing"],
     featured: true,
     art: "adaptive",
-    image: "/images/projects/humanoid-prismatic-limb-prototype.jpg",
+    image: "/images/projects/humanoid-leg-test-rig.webp",
     imageAlt:
-      "Prismatic humanoid limb prototype with a motor and vertical linear rails on a workbench.",
-    imageCaption: "Prismatic limb prototype during mechanical assembly.",
+      "Assembled humanoid leg with motors, wiring, and a foot mounted in an aluminum test frame.",
+    imageCaption: "Assembled humanoid leg mounted in its lab test rig.",
     gallery: [
+      {
+        src: "/images/projects/humanoid-prismatic-limb-prototype.jpg",
+        alt: "Prismatic humanoid limb prototype with a motor and vertical linear rails on a workbench.",
+        caption: "Prismatic limb prototype during mechanical assembly.",
+      },
       {
         src: "/images/projects/humanoid-support-fea.webp",
         alt: "Finite element analysis view of a humanoid actuator support with a central circular opening.",
@@ -128,10 +133,10 @@ export const projects = [
     ],
     featured: true,
     art: "pneumatic",
-    image: "/images/projects/pneumatic-valve-top-cover.webp",
+    image: "/images/projects/pneumatic-valve-flexible-element.webp",
     imageAlt:
-      "CAD rendering of a valve top cover with two connection bolts beside a central cylinder.",
-    imageCaption: "Top cover with two electrical connection bolts.",
+      "CAD rendering of a four-armed valve element with a raised central section.",
+    imageCaption: "Four-armed valve element in CAD.",
     gallery: [
       {
         src: "/images/projects/pneumatic-valve-operation-sketch.webp",
@@ -144,9 +149,9 @@ export const projects = [
         caption: "Cylindrical valve housing and bottom port.",
       },
       {
-        src: "/images/projects/pneumatic-valve-flexible-element.webp",
-        alt: "CAD rendering of a four-armed valve element with a raised central section.",
-        caption: "Four-armed valve element in CAD.",
+        src: "/images/projects/pneumatic-valve-top-cover.webp",
+        alt: "CAD rendering of a valve top cover with two connection bolts beside a central cylinder.",
+        caption: "Top cover with two electrical connection bolts.",
       },
     ],
   },
