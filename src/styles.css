@@ -2327,14 +2327,13 @@ svg {
 .education-card > p.course-note {
   font-size: 11px;
 }
-.portrait-mode > img {
+.rocket-mode > img {
   height: 470px;
   width: 82%;
-  object-fit: cover;
-  border: 1px solid #6b776544;
+  object-fit: contain;
   filter: none;
 }
-.portrait-mode .hero-art-caption {
+.rocket-mode .hero-art-caption {
   bottom: 0;
 }
 @media (max-width: 800px) {
@@ -2345,7 +2344,7 @@ svg {
   .project-grid .project-body > p {
     font-size: 12px;
   }
-  .portrait-mode > img {
+  .rocket-mode > img {
     height: 390px;
     width: 90%;
   }
@@ -2382,7 +2381,7 @@ svg {
   .publication-note h3 {
     font-size: 12px;
   }
-  .portrait-mode > img {
+  .rocket-mode > img {
     height: 310px;
     width: 80%;
   }

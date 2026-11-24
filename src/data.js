@@ -68,8 +68,13 @@ export const projects = [
     image: "/images/projects/humanoid-leg-test-rig.webp",
     imageAlt:
       "Assembled humanoid leg with motors, wiring, and a foot mounted in an aluminum test frame.",
-    imageCaption: "Assembled humanoid leg mounted in its lab test rig.",
+    imageCaption: "Humanoid leg extended vertically in its lab test rig.",
     gallery: [
+      {
+        src: "/images/projects/humanoid-leg-bent.webp",
+        alt: "Humanoid leg mounted in the same aluminum test rig with the knee bent.",
+        caption: "Humanoid leg in the test rig with the knee bent.",
+      },
       {
         src: "/images/projects/humanoid-prismatic-limb-prototype.jpg",
         alt: "Prismatic humanoid limb prototype with a motor and vertical linear rails on a workbench.",

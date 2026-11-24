@@ -509,7 +509,7 @@ function HomePage() {
               </a>
             </div>
           </div>
-          <div className={`hero-art ${hasPortrait ? "portrait-mode" : ""}`}>
+          <div className="hero-art rocket-mode">
             <div className="art-orbit orbit-one" />
             <div className="art-orbit orbit-two" />
             <div className="crosshair crosshair-top">+</div>
@@ -519,23 +519,13 @@ function HomePage() {
               <span>01—AMC</span>
             </div>
             <img
-              src={publicAsset(
-                hasPortrait ? profile.portrait : "/images/hero-robot.svg",
-              )}
-              alt={
-                hasPortrait
-                  ? profile.fullName
-                  : "Conceptual technical illustration of a humanoid robot"
-              }
-              onError={() => setHasPortrait(false)}
+              src={publicAsset("/images/rocket.webp")}
+              alt="Rocket standing upright outdoors beneath a partly cloudy sky"
               fetchPriority="high"
             />
             <span className="hero-art-caption">
               <span className="orange-dot" /> MECHANICAL CURIOSITY, IN MOTION
             </span>
-            {!hasPortrait && (
-              <span className="hero-concept">CONCEPT ILLUSTRATION</span>
-            )}
           </div>
         </div>
         <div className="hero-bottom container">
