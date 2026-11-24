@@ -25,6 +25,7 @@ project_pages = [
     ('rbe-3001', 'RBE 3001 — Vision-Guided Ball Sorting', None),
 ]
 project_gallery_counts = {
+    'adaptable-morphology': 5,
     'pneumatic-actuators': 3,
     'variable-contact-sole': 1,
     'nan-011': 1,
@@ -264,7 +265,7 @@ with sync_playwright() as playwright:
         page.get_by_role('link', name=re.compile(r'^Explore ' + re.escape(title) + ',')).click()
         expect_project(page, slug, title, period)
         expect_assets_and_layout(page)
-        count = expect_gallery(page, slug, open_full_size=slug == 'pneumatic-actuators')
+        count = expect_gallery(page, slug, open_full_size=slug == 'adaptable-morphology')
         gallery_total += count
         gallery_project_total += bool(count)
         # Pasting the detail URL and refreshing both preserve the project page.
@@ -274,7 +275,7 @@ with sync_playwright() as playwright:
         expect_project(page, slug, title, period)
         menu_navigate(page, 'Projects', '/projects')
         expect_projects(page)
-    assert (gallery_project_total, gallery_total) == (6, 11)
+    assert (gallery_project_total, gallery_total) == (7, 16)
 
     menu_navigate(page, 'Research publications', '/publications')
     expect(page.locator('main')).to_contain_text(re.compile(r'(first publication|no publications|nothing published)', re.I))

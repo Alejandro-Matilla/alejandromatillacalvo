@@ -65,6 +65,37 @@ export const projects = [
     tags: ["Mechanical Design", "SolidWorks", "FEA", "Additive Manufacturing"],
     featured: true,
     art: "adaptive",
+    image: "/images/projects/humanoid-leg-test-rig.webp",
+    imageAlt:
+      "Assembled humanoid leg with motors, wiring, and a foot mounted in an aluminum test frame.",
+    imageCaption: "Humanoid leg extended vertically in its lab test rig.",
+    gallery: [
+      {
+        src: "/images/projects/humanoid-leg-bent.webp",
+        alt: "Humanoid leg mounted in the same aluminum test rig with the knee bent.",
+        caption: "Humanoid leg in the test rig with the knee bent.",
+      },
+      {
+        src: "/images/projects/humanoid-support-fea.webp",
+        alt: "Finite element analysis view of a humanoid actuator support with a central circular opening.",
+        caption: "FEA view of an actuator support.",
+      },
+      {
+        src: "/images/projects/humanoid-mount-fea.webp",
+        alt: "Finite element analysis view of a mounting plate with a large circular opening and bolt holes.",
+        caption: "FEA view of a mounting plate.",
+      },
+      {
+        src: "/images/projects/humanoid-circular-plate-fea.webp",
+        alt: "Finite element analysis view of a circular plate with a central hole and perimeter openings.",
+        caption: "FEA view of a circular structural plate.",
+      },
+      {
+        src: "/images/projects/humanoid-simulation-view.webp",
+        alt: "Humanoid model shown in a simulation environment.",
+        caption: "Humanoid model in a simulation view.",
+      },
+    ],
   },
   {
     id: "pneumatic-actuators",
