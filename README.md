@@ -60,7 +60,7 @@ The browser smoke test uses Python Playwright and Chromium at `/usr/bin/chromium
 
 Edit `src/data.js` for profile copy, project descriptions, categories, featured work, and publication entries.
 
-The supplied project PDF provides 22 authentic photographs, CAD views, analyses, and sketches for seven projects. These appear as seven primary images and 15 supplementary gallery frames. Gallery links open the original image at full size in a new tab, including in the offline preview. Photos preserve the complete hardware view in contained frames. The CNC plotter still uses a labeled concept illustration, and the home portrait remains a placeholder.
+Project pages use photographs, CAD views, analyses, and sketches where available. Gallery links open the original image at full size in a new tab, including in the offline preview. Photos preserve the complete hardware view in contained frames. Projects without a primary image use a labeled concept illustration.
 
 - Put a portrait in `public/images/portrait.jpg` and set `profile.portrait` to `'/images/portrait.jpg'`. It appears in the home and about sections.
 - Put project photos in `public/images/`. Add `image: '/images/your-project.jpg'` and a descriptive `imageAlt` to its project object. Photos replace conceptual artwork in both cards and project pages; the concept caption disappears automatically.

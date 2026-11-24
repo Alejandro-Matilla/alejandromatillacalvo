@@ -42,16 +42,16 @@ export const projects = [
     period: "August 2026 — Present",
     status: "In progress",
     description:
-      "Developing a humanoid with independently adjustable limb lengths so its morphology can suit the task.",
+      "Developing a humanoid with adaptable morphology for different tasks and environments.",
     details: [
       "Contribute to the humanoid’s mechanical design, manufacturing, and assembly.",
       "Check SolidWorks assemblies for tolerances and range of motion, and use finite element analysis to evaluate parts against a minimum factor of safety of 2.",
-      "Iterate on PLA prototypes before producing carbon-fiber-filament parts and assembling them with threaded inserts, machined aluminum extrusion, and motors.",
+      "Build and evaluate prototypes before fabricating parts for assembly.",
     ],
     sections: [
       {
         heading: "Task-dependent morphology",
-        body: "Prismatic limbs allow each limb length to change independently throughout a continuous range, rather than switching only between fully extended and fully retracted positions. The aim is to choose a useful morphology for the task—for example, shorter arms to reduce lifting torque or longer legs to travel farther per step.",
+        body: "The research explores how a humanoid can adapt its morphology to the demands of a task. One goal is to understand how different configurations affect locomotion and manipulation.",
       },
       {
         heading: "Mechanical development",
@@ -59,48 +59,12 @@ export const projects = [
       },
       {
         heading: "Planned control and integration",
-        body: "After leg testing, I plan to join the reinforcement learning team to develop a morphology-agnostic walking policy for different limb lengths. Later stages include simulation-to-real transfer, upper-body assembly and teleoperation, and integration of upper- and lower-body control. A longer-term goal is a hierarchy in which a vision-language-action (VLA) agent interprets commands and a locomotion policy produces the joint motions.",
+        body: "I plan to join the reinforcement learning team to develop a walking policy that works across different robot configurations. Later stages include simulation-to-real transfer, upper-body assembly and teleoperation, and integration of upper- and lower-body control. A longer-term goal is a hierarchy in which a vision-language-action (VLA) agent interprets commands and a locomotion policy produces the joint motions.",
       },
     ],
     tags: ["Mechanical Design", "SolidWorks", "FEA", "Additive Manufacturing"],
     featured: true,
     art: "adaptive",
-    image: "/images/projects/humanoid-leg-test-rig.webp",
-    imageAlt:
-      "Assembled humanoid leg with motors, wiring, and a foot mounted in an aluminum test frame.",
-    imageCaption: "Humanoid leg extended vertically in its lab test rig.",
-    gallery: [
-      {
-        src: "/images/projects/humanoid-leg-bent.webp",
-        alt: "Humanoid leg mounted in the same aluminum test rig with the knee bent.",
-        caption: "Humanoid leg in the test rig with the knee bent.",
-      },
-      {
-        src: "/images/projects/humanoid-prismatic-limb-prototype.jpg",
-        alt: "Prismatic humanoid limb prototype with a motor and vertical linear rails on a workbench.",
-        caption: "Prismatic limb prototype during mechanical assembly.",
-      },
-      {
-        src: "/images/projects/humanoid-support-fea.webp",
-        alt: "Finite element analysis view of a humanoid actuator support with a central circular opening.",
-        caption: "FEA view of an actuator support.",
-      },
-      {
-        src: "/images/projects/humanoid-mount-fea.webp",
-        alt: "Finite element analysis view of a mounting plate with a large circular opening and bolt holes.",
-        caption: "FEA view of a mounting plate.",
-      },
-      {
-        src: "/images/projects/humanoid-circular-plate-fea.webp",
-        alt: "Finite element analysis view of a circular plate with a central hole and perimeter openings.",
-        caption: "FEA view of a circular structural plate.",
-      },
-      {
-        src: "/images/projects/humanoid-simulation-view.webp",
-        alt: "Humanoid model shown in a simulation environment.",
-        caption: "Humanoid model in a simulation view.",
-      },
-    ],
   },
   {
     id: "pneumatic-actuators",
