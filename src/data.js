@@ -42,7 +42,7 @@ export const projects = [
     period: "August 2026 — Present",
     status: "In progress",
     description:
-      "Developing a humanoid with adaptable morphology for different tasks and environments.",
+      "Contributing to NOVA, the GR0X team’s humanoid at WPI, which explores how adaptable morphology can improve performance across different tasks and environments.",
     details: [
       "Contribute to the humanoid’s mechanical design, manufacturing, and assembly.",
       "Check SolidWorks assemblies for tolerances and range of motion, and use finite element analysis to evaluate parts against a minimum factor of safety of 2.",
@@ -54,8 +54,16 @@ export const projects = [
         body: "The research explores how a humanoid can adapt its morphology to the demands of a task. One goal is to understand how different configurations affect locomotion and manipulation.",
       },
       {
+        heading: "From CAD to two hardware prototypes",
+        body: "GR0X is part of WPI’s ALMaS Research Group. The team went through five CAD iterations before building NOVA v1 and presented the first hardware at WPI’s Undergraduate Research Projects Showcase in April 2026. NOVA v2 followed with a redesigned, fully assembled lower body while a second student project team works on the upper body.",
+      },
+      {
         heading: "Mechanical development",
         body: "The first phase focuses on mechanical design and fabrication. CAD assemblies help check fit and the desired motion before stress analysis and printing. PLA prototypes reveal where real-world tolerances need adjustment; checked parts are then printed in carbon-fiber filament and assembled. We are currently testing movement on one leg.",
+      },
+      {
+        heading: "Locomotion in simulation",
+        body: "The team trained a reinforcement-learning walking policy in Isaac Lab. In the reported simulation tests, the policy continued walking as physical parameters such as mass and friction varied and the robot received random pushes. Transferring the policy to the physical robot is a next step. Project milestones and simulation status are drawn from GR0X student research lead Juan Pablo Espinosa Chessal’s project write-up.",
       },
       {
         heading: "Planned control and integration",
