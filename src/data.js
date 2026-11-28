@@ -63,7 +63,7 @@ export const projects = [
       },
       {
         heading: "Locomotion in simulation",
-        body: "The team trained a reinforcement-learning walking policy in Isaac Lab. In the reported simulation tests, the policy continued walking as physical parameters such as mass and friction varied and the robot received random pushes. Transferring the policy to the physical robot is a next step. Project milestones and simulation status are drawn from GR0X student research lead Juan Pablo Espinosa Chessal’s project write-up.",
+        body: "The team trained a reinforcement-learning walking policy in Isaac Lab. In the reported simulation tests, the policy continued walking as physical parameters such as mass and friction varied and the robot received random pushes. Transferring the policy to the physical robot is a next step.",
       },
       {
         heading: "Planned control and integration",
